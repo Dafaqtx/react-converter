@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="header">
             <nav className="navbar navbar-dark bg-dark">
-                <a className="navbar-brand" href="#">Converter</a>
+                <a className="navbar-brand" href="/">Converter</a>
             </nav>
         </header>
     )
