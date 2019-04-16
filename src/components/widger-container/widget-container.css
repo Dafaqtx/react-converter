@@ -1,0 +1,30 @@
+.widget {
+  width: 100%;
+  height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.widget-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 70em;
+  max-width: 100%;
+  padding: 1.25em;
+  border-radius: 0.3125em;
+  background: #fff;
+  font-size: 1rem;
+}

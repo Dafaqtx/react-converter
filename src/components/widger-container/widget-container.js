@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import './widget-container.css';
+import Widget from '../widget/';
 
 Modal.setAppElement('#root');
 
@@ -26,7 +28,7 @@ class WidgetContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className='widget'>
         <div className='mx-auto w-25 p-3'>
           <button
             onClick={this.openModal}
@@ -40,8 +42,10 @@ class WidgetContainer extends Component {
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           contentLabel='Example Modal'
+          overlayClassName='widget-overlay'
+          className='widget-modal'
         >
-          123
+          <Widget />
         </Modal>
       </div>
     );

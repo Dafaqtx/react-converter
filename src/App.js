@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import WidgetContainer from './components/WidgetContainer';
+import Header from './components/header/';
+import WidgetContainer from './components/widger-container/';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import CurrencyLayer from './services/currencylayer';
 
@@ -53,9 +54,6 @@ class App extends Component {
     return (
       <div id='app'>
         <Header />
-        <div>USD: {Object.values(this.state.USD)}</div>
-        <div>EUR: {Object.values(this.state.EUR)}</div>
-        <div>RUB: {Object.values(this.state.RUB)}</div>
         <WidgetContainer />
       </div>
     );

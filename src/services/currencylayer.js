@@ -1,6 +1,6 @@
 class CurrencyLayer {
   _apiBase = 'http://apilayer.net/api';
-  _apiKey = '17793dec281cda4014de31bb87f0c3e3';
+  _apiKey = '17793dec281cda4014de31bb87f0c3e 3';
 
   async getResource(url) {
     const res = await fetch(
