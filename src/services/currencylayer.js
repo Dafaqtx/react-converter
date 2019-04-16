@@ -18,17 +18,17 @@ class CurrencyLayer {
     return res.quotes;
   }
 
-  async getUSDCurrency() {
+  async getUSDCurrencies() {
     const res = await this.getResource(`currencies=USD`);
     return res.quotes;
   }
 
-  async getEURCurrency() {
+  async getEURCurrencies() {
     const res = await this.getResource(`currencies=EUR`);
     return res.quotes;
   }
 
-  async getRUBCurrency() {
+  async getRUBCurrencies() {
     const res = await this.getResource(`currencies=RUB`);
     return res.quotes;
   }
