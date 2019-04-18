@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TextArea from '../widget-textarea';
+import ControlButton from '../widget-btn';
 import './widget.css';
 
 class Widget extends Component {
@@ -35,16 +36,7 @@ class Widget extends Component {
           <span className='text-muted'>I have</span>
           <div className='mt-1 mb-4 controls'>
             {this.state.currencies.map((curency) => (
-              <button
-                onClick={() => this.handleClick()}
-                key={curency.id}
-                type='button'
-                className={`btn mr-2 ${
-                  curency.active ? 'btn-success' : 'btn-light'
-                }`}
-              >
-                {curency.name}
-              </button>
+              <ControlButton curency={curency} />
             ))}
           </div>
           <div className='form-group'>
@@ -55,16 +47,7 @@ class Widget extends Component {
           <span className='text-muted'>I need</span>
           <div className='mt-1 mb-4 controls'>
             {this.state.currencies.map((curency) => (
-              <button
-                onClick={() => this.handleClick()}
-                key={curency.id}
-                type='button'
-                className={`btn mr-2 ${
-                  curency.active ? 'btn-success' : 'btn-light'
-                }`}
-              >
-                {curency.name}
-              </button>
+              <ControlButton curency={curency} />
             ))}
           </div>
           <div className='form-group'>
