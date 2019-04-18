@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.widget-overlay {
+.widget__overlay {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -15,7 +15,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.widget-modal {
+.widget__modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,4 +27,13 @@
   border-radius: 0.3125em;
   background: #fff;
   font-size: 1rem;
+}
+
+.close-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  max-width: 20px;
+  cursor: pointer;
+  z-index: 10;
 }

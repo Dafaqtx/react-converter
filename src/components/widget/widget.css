@@ -1,3 +1,17 @@
 .no-resize {
   resize: none;
 }
+
+.current-date {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.current-date-label {
+  font-size: 16px;
+  color: black;
+}
+
+.form-textarea {
+  font-size: 36px !important;
+}
