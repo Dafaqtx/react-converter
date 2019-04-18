@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextArea from '../widget-textarea';
 import ControlButton from '../widget-btn';
+import WidgetDate from '../widget-date';
 import './widget.css';
 
 class Widget extends Component {
@@ -51,10 +52,7 @@ class Widget extends Component {
           <div className='form-group'>
             <TextArea />
           </div>
-          <div className='current-date'>
-            <span className='current-date-label'>Данные за:</span>{' '}
-            {new Date().toString()}
-          </div>
+          <WidgetDate />
         </div>
       </div>
     );
