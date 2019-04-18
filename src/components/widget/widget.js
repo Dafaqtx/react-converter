@@ -11,16 +11,12 @@ class Widget extends Component {
         <div className='col-6'>
           <span className='text-muted'>I have</span>
           <ControlButton />
-          <div className='form-group'>
-            <TextArea />
-          </div>
+          <TextArea />
         </div>
         <div className='col-6'>
           <span className='text-muted'>I need</span>
           <ControlButton />
-          <div className='form-group'>
-            <TextArea />
-          </div>
+          <TextArea />
           <WidgetDate />
         </div>
       </div>
