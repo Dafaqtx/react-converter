@@ -9,7 +9,7 @@ class TextArea extends Component {
     const value = event.target.value;
     const regExp = /^[0-9.]+$/;
 
-    if (regExp.test(value)) {
+    if (regExp.test(value) || value === '') {
       this.setState({ value });
     }
   };
