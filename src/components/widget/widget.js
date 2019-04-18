@@ -27,8 +27,6 @@ class Widget extends Component {
     ],
   };
 
-  handleClick = () => {};
-
   render() {
     return (
       <div className='row justify-content-between'>
@@ -36,7 +34,7 @@ class Widget extends Component {
           <span className='text-muted'>I have</span>
           <div className='mt-1 mb-4 controls'>
             {this.state.currencies.map((curency) => (
-              <ControlButton curency={curency} />
+              <ControlButton key={curency.id} curency={curency} />
             ))}
           </div>
           <div className='form-group'>
@@ -47,7 +45,7 @@ class Widget extends Component {
           <span className='text-muted'>I need</span>
           <div className='mt-1 mb-4 controls'>
             {this.state.currencies.map((curency) => (
-              <ControlButton curency={curency} />
+              <ControlButton key={curency.id} curency={curency} />
             ))}
           </div>
           <div className='form-group'>
