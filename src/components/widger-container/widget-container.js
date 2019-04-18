@@ -26,7 +26,7 @@ class WidgetContainer extends Component {
   render() {
     return (
       <div className='widget'>
-        <div className='mx-auto w-25 p-3'>
+        <div className='mx-auto p-3'>
           <button
             onClick={this.openModal}
             className='btn btn-primary btn-lg btn-block'

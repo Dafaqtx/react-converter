@@ -9,12 +9,12 @@ class Widget extends Component {
   render() {
     return (
       <div className='row justify-content-between'>
-        <div className='col-6'>
+        <div className='col-12 col-md-6'>
           <WigetTitle title='I have' />
           <ControlButton />
           <TextArea />
         </div>
-        <div className='col-6'>
+        <div className='col-12 col-md-6'>
           <WigetTitle title='I need' />
           <ControlButton />
           <TextArea />
